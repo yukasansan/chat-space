@@ -14,11 +14,13 @@
 ## groups_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer_index|null: false, foreign_key: true|
-|group_id|integer_index|null: false, foreign_key: true|
-|name|text|
-|group_name|text|
-|chat_log|datatime|
+|id|integer_index|null: false, foreign_key: true|
+|role|text|
+|users_id|integer_index|
+|groups_id|integer_index|
+
+
+
 
 ## groupsテーブル
 |Column|Type|Options|
