@@ -1,0 +1,22 @@
+.chat-main
+  .chat-main__header
+    .chat-main__header__left-box
+      .chat-main__header__left-box__name
+        test
+      .chat-main__header__left-box__chat-member
+        member:ああああ
+    
+    .chat-main__header__btn-edit
+      = link_to'Edit','#'  
+  .chat-main__message-list
+
+
+
+  .chat-main__form
+    .input-box    
+      %input{type:"text",class:"input-box__text",placeholder:"type a message"}
+      %label{class:"input-box__image"}
+        =icon('fas','image')
+        %input{type:"file",class:"input-box__image__file"}
+    .submit-btn
+      Send
